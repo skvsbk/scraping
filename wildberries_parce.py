@@ -1,3 +1,4 @@
+# pip install bs4 requests lxml
 from bs4 import BeautifulSoup
 import requests
 import csv
