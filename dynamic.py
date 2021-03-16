@@ -35,7 +35,6 @@ def get_data(url):
 
         soup = BeautifulSoup(src, "lxml")
         articles = soup.find_all("article", class_="ib19")
-     #   print(articles)
 
         project_urls = []
         for article in articles:
