@@ -85,10 +85,8 @@ def get_data(url):
             except Exception:
                 project_full_description = "No full description"
 
-            rep = ["<p>", "</p>"]
-            for s in rep:
-                if s in project_full_description:
-                    project_full_description = project_full_description.replace(s, "")
+            for s in ["<p>", "</p>"]:
+                project_full_description = project_full_description.replace(s, "") if s in project_full_description else project_full_description
 
             project_data_list.append(
                 {
